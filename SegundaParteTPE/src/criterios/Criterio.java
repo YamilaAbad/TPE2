@@ -2,7 +2,7 @@ package criterios;
 
 import elementos.ElementoComida;
 
-public abstract class Criterio {
+public interface Criterio {
 
     public abstract boolean cumple (ElementoComida c);
 }

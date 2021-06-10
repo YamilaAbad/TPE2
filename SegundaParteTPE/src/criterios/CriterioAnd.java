@@ -2,7 +2,7 @@ package criterios;
 
 import elementos.ElementoComida;
 
-public class CriterioAnd extends Criterio{
+public class CriterioAnd implements Criterio{
 
     Criterio c1;
     Criterio c2;

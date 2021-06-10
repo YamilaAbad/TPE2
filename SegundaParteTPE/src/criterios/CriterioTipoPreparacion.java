@@ -2,7 +2,7 @@ package criterios;
 
 import elementos.ElementoComida;
 
-public class CriterioTipoPreparacion extends Criterio{
+public class CriterioTipoPreparacion implements Criterio{
     String tipo;
 
     public CriterioTipoPreparacion(String tipo) {

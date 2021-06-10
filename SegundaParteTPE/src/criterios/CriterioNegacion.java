@@ -2,7 +2,7 @@ package criterios;
 
 import elementos.ElementoComida;
 
-public class CriterioNegacion extends Criterio{
+public class CriterioNegacion implements Criterio{
 
     Criterio criterio;
 

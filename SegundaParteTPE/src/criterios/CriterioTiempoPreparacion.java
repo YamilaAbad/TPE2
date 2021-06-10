@@ -2,7 +2,7 @@ package criterios;
 
 import elementos.ElementoComida;
 
-public class CriterioTiempoPreparacion extends Criterio{
+public class CriterioTiempoPreparacion implements Criterio{
     int tiempo;
 
     public CriterioTiempoPreparacion(int tiempo) {
