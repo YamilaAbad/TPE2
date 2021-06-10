@@ -11,5 +11,6 @@ public abstract class ElementoComida {
     public abstract double getCalorias();
     public abstract int getTiempoPreparacion();
     public abstract double getPrecio();
-
+    public abstract String getTipo();
+    public abstract String getModoPreparacion();
 }

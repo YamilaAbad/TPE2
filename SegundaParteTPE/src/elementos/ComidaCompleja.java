@@ -27,11 +27,35 @@ public class ComidaCompleja extends ElementoComida{
 
 
     public int getTiempoPreparacion() {
-        return 0;
+        int tiempoTotal = 0;
+        for(ElementoComida comida : comidas){
+            tiempoTotal = tiempoTotal + comida.getTiempoPreparacion();
+        }
+        return tiempoTotal;
     }
 
 
     public double getPrecio() {
-        return 0;
+        double precioTotal = 0;
+        for (ElementoComida comida : comidas){
+            precioTotal = precioTotal + comida.getPrecio();
+        }
+        return precioTotal;
+    }
+
+    public String getTipo() {
+        String tipoPreparacionPorElemento = null;
+        for (ElementoComida comida : comidas){
+            tipoPreparacionPorElemento = comida.getTipo();
+        }
+        return tipoPreparacionPorElemento;
+    }
+
+    public String getModoPreparacion() {
+        String modoPreparacionPorElemento = null;
+        for (ElementoComida comida : comidas){
+            modoPreparacionPorElemento = comida.getModoPreparacion();
+        }
+        return modoPreparacionPorElemento;
     }
 }
