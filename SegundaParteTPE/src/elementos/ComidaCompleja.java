@@ -6,7 +6,7 @@ public class ComidaCompleja extends ElementoComida{
 
     ArrayList<ElementoComida> comidas;
 
-    public ComidaCompleja(String nombre, ArrayList<ElementoComida> comidas) {
+    public ComidaCompleja(String nombre) {
         super(nombre);
         comidas= new ArrayList<ElementoComida>();
     }
