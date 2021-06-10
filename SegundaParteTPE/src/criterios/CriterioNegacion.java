@@ -10,6 +10,7 @@ public class CriterioNegacion implements Criterio{
         this.criterio = criterio;
     }
 
+
     @Override
     public boolean cumple(ElementoComida c) {
         return !(criterio.cumple(c));

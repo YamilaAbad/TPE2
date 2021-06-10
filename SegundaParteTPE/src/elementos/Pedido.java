@@ -25,4 +25,13 @@ public class Pedido {
         }
         return cocinar;
     }
+
+    public double costoTotal (){
+        double sumaTotal = 0;
+        for (ElementoComida c: pedidos){
+            sumaTotal = sumaTotal+ Cocina.criterioDelDia(c);
+        }
+
+        return sumaTotal;
+    }
 }

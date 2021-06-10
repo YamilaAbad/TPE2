@@ -9,6 +9,7 @@ public class CriterioTiempoPreparacion implements Criterio{
         this.tiempo = tiempo;
     }
 
+
     @Override
     public boolean cumple(ElementoComida c) {
         return c.getTiempoPreparacion()<tiempo;

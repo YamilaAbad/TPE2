@@ -9,6 +9,7 @@ public class CriterioTipoPreparacion implements Criterio{
         this.tipo = tipo;
     }
 
+
     @Override
     public boolean cumple(ElementoComida c) {
         return c.getTipo().equals(tipo);
