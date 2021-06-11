@@ -16,8 +16,8 @@ public class PrecioPorCondicion implements PorcentajeAplicado{
     @Override
     public double aplicar(ElementoComida c) {
         if(condicion.cumple(c)){
-            return (c.getPrecio()+(c.getPrecio()*valorCumple/100));
+            return (c.getPrecio()+valorCumple);
         }else
-            return (c.getPrecio()+(c.getPrecio()*valorNoCumple/100)) ;
+            return (c.getPrecio()+valorNoCumple) ;
     }
 }
