@@ -6,10 +6,12 @@ import java.util.ArrayList;
 
 public class Pedido {
     private int numeroMesa;
+    private String nombreMozo;
     private ArrayList<ElementoComida> pedidos;
 
-    public Pedido(int numeroMesa) {
+    public Pedido(int numeroMesa, String nombreMozo) {
         this.numeroMesa = numeroMesa;
+        this.nombreMozo= nombreMozo;
         pedidos= new ArrayList<ElementoComida>();
     }
 
@@ -26,12 +28,4 @@ public class Pedido {
         return cocinar;
     }
 
-    public double costoTotal (){
-        double sumaTotal = 0;
-        for (ElementoComida c: pedidos){
-            sumaTotal = sumaTotal+ Cocina.criterioDelDia(c);
-        }
-
-        return sumaTotal;
-    }
 }
