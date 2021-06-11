@@ -52,7 +52,7 @@ public class Palacio {
         //Total del pedido con una condicion en pedido 1
         System.out.println("El total del pedido sumó: $" + cocina1.aplicoExtra(extra1));
         //total del pedido con un adicional % en pedido 2
-        System.out.println("El total del pedido sumo: $" + cocina2.aplicoExtra(extra2));
+        System.out.println("El total del pedido sumó: $" + cocina2.aplicoExtra(extra2));
         //total del pedido con una condicion y un adicional % en pedido 1
         System.out.println("El total del pedido sumó: $" + (cocina1.aplicoExtra(extra1)+cocina1.aplicoExtra(extra2)));
     }
