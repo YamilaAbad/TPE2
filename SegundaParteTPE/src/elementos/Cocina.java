@@ -25,10 +25,10 @@ public class Cocina {
         return cocinar;
     }
 
-    public double aplicoExtra(PorcentajeAplicado cocina){
+    public double aplicoExtra(PorcentajeAplicado valor){
         double totalAcobrar=0;
         for(ElementoComida c:pedidos){
-            totalAcobrar= totalAcobrar + cocina.aplicar(c);
+            totalAcobrar= totalAcobrar + valor.aplicar(c);
         }
         return totalAcobrar;
     }

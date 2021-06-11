@@ -1,6 +1,5 @@
 package elementos;
 
-import criterios.*;
 
 import java.util.ArrayList;
 
