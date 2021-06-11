@@ -2,22 +2,25 @@ package elementos;
 
 import criterios.*;
 
+import java.util.ArrayList;
+
 
 public class Cocina {
-    private Criterio condicion;
-    private double valorCumple;
-    private double valorNoCumple;
-    private double adicional;
+
+    private ArrayList<ElementoComida> pedidos= new ArrayList<ElementoComida>();
 
     //para cuando se tiene una condicion
-    public Cocina(Criterio condicion, double valorCumple, double valorNoCumple) {
-        this.condicion = condicion;
-        this.valorCumple = valorCumple;
-        this.valorNoCumple = valorNoCumple;
+    public Cocina(ArrayList<ElementoComida> pedido) {
+        this.pedidos=pedido;
     }
-    //para cuando solo se tiene que agregar un adicional al total
-    public Cocina(double adicional) {
-        this.adicional = adicional;
+
+
+    public double aplicoExtra(PorcentajeAplicado cocina){
+        double totalAcobrar=0;
+        for(ElementoComida c:pedidos){
+            totalAcobrar= totalAcobrar + cocina.aplicar(c);
+        }
+        return totalAcobrar;
     }
 
 

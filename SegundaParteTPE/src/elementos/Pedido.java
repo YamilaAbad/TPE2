@@ -1,13 +1,13 @@
 package elementos;
 
-import criterios.Criterio;
+import criterios.*;
 
 import java.util.ArrayList;
 
 public class Pedido {
     private int numeroMesa;
     private String nombreMozo;
-    private ArrayList<ElementoComida> pedidos;
+    public ArrayList<ElementoComida> pedidos;
 
     public Pedido(int numeroMesa, String nombreMozo) {
         this.numeroMesa = numeroMesa;

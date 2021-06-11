@@ -36,4 +36,6 @@ public class ComidaSimple extends ElementoComida{
     public double getPrecio() {
         return precio;
     }
+
+
 }
