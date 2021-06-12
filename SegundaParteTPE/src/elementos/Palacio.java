@@ -33,15 +33,15 @@ public class Palacio {
         Criterio dobleCondicion = new CriterioAnd(new CriterioTiempoPreparacion(15), new CriterioPorCalorias(500));
 
         //COCINA
-        Cocina cocina1 = new Cocina(p1.pedidos);
-        Cocina cocina2 = new Cocina(p2.pedidos);
+        Cocina instancia1 = new Cocina(p1.comidas);
+        Cocina instancia2 = new Cocina(p2.comidas);
 
         //Imprimo por pantalla las comidas que tarden menos de un tiempo dado
-        System.out.println("Comidas que tardan menos de 30 minutos en el primer pedido: "+cocina1.derivoEstaciones(comidasMenoresA));
+        System.out.println("Comidas que tardan menos de 30 minutos en el primer pedido: "+instancia1.derivoEstaciones(comidasMenoresA));
         //Imprimo por pantalla las comidas que tengan modo de preparacion frito
-        System.out.println("Comidas que se preparan con modo hervido en el segundo pedido: "+cocina2.derivoEstaciones(comidasPorModo));
+        System.out.println("Comidas que se preparan con modo hervido en el segundo pedido: "+instancia2.derivoEstaciones(comidasPorModo));
         //imprimo por pantalla una condicion doble con criterio de tiempo menor a 15 y calorias menores a 500
-        System.out.println("Comidas que se preparan en menos de 15 min y con menos de 500 calorias pertenecientes al pedido 1: "+cocina1.derivoEstaciones(dobleCondicion));
+        System.out.println("Comidas que se preparan en menos de 15 min y con menos de 500 calorias pertenecientes al pedido 1: "+instancia1.derivoEstaciones(dobleCondicion));
 
 
         //la cocina dará el resultado de cuanto tengo que cobrar en cada pedido dependiendo si se le dará un criterio o un adicional para cobrar, o ambas en su defecto
@@ -50,10 +50,10 @@ public class Palacio {
 
         //TOTAL PEDIDO
         //Total del pedido con una condicion en pedido 1
-        System.out.println("El total del pedido sumó: $" + cocina1.aplicoExtra(extra1));
+        System.out.println("El total del pedido sumó: $" + instancia1.aplicoExtra(extra1));
         //total del pedido con un adicional % en pedido 2
-        System.out.println("El total del pedido sumó: $" + cocina2.aplicoExtra(extra2));
+        System.out.println("El total del pedido sumó: $" + instancia2.aplicoExtra(extra2));
         //total del pedido con una condicion y un adicional % en pedido 1
-        System.out.println("El total del pedido sumó: $" + (cocina1.aplicoExtra(extra1)+cocina1.aplicoExtra(extra2)));
+        System.out.println("El total del pedido sumó: $" + (instancia1.aplicoExtra(extra1)+instancia1.aplicoExtra(extra2)));
     }
 }

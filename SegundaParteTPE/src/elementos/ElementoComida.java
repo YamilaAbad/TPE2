@@ -3,7 +3,7 @@ package elementos;
 public abstract class ElementoComida {
     private String nombre;
 
-    //constructor
+
     public ElementoComida(String nombre) {
         this.nombre = nombre;
     }
